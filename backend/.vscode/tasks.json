@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build college",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"c:/Users/Rushikesh/OneDrive/Pictures/Desktop/API workshop/backend/college/college.sqlproj",
+				"/p:NetCoreBuild=true",
+				"/p:NETCoreTargetsPath=c:/Users/Rushikesh/.vscode/extensions/ms-mssql.mssql-1.46.0/BuildDirectory",
+				"/p:SystemDacpacsLocation=c:/Users/Rushikesh/.vscode/extensions/ms-mssql.mssql-1.46.0/BuildDirectory"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the college SQL project"
+		}
+	]
+}
