@@ -1,5 +1,7 @@
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
+
 export const sendPrompt = async (text) => {
-  const response = await fetch('/api/send-prompt', {
+  const response = await fetch(`${API_BASE}/send-prompt`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
